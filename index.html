@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card - Stage 0</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <article data-testid="test-profile-card" class="profile-card">
+        <figure class="avatar">
+          <img
+            data-testid="test-user-avatar"
+            src="profilepic.jpg"
+            alt="Nathan Igoni's profile photo"
+          />
+        </figure>
+
+        <section class="info">
+          <header>
+            <h2 data-testid="test-user-name">Nathan Igey Igoni</h2>
+          </header>
+
+          <p data-testid="test-user-bio">
+            Frontend engineer, dreamer, and coffee-powered problem solver. I
+            build things that live on the web and sometimes break them for
+            learning purposes.
+          </p>
+
+          <section >
+          <h1 class="">TIME :</h1>
+          <p data-testid="test-user-time" class="time"></p>
+          </section>
+
+          <nav>
+            <ul data-testid="test-user-social-links" class="social-links">
+              <li>
+                <a
+                  data-testid="test-user-social-youtube"
+                  href="https://www.youtube.com/@nateeeee.dev.software"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Youtube</a
+                >
+              </li>
+              <li>
+                <a
+                  data-testid="test-user-social-github"
+                  href="https://github.com/Nathanigoni"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a
+                  data-testid="test-user-social-linkedin"
+                  href="https://www.linkedin.com/in/nathan-igoni-871956354/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <section data-testid="test-user-hobbies" class="hobbies">
+            <h3>Hobbies</h3>
+            <ul>
+              <li>Coding lots side projects</li>
+              <li>Working on Java projects</li>
+              <li>Listening to Twenty One Pilots</li>
+              <li>Reading sci-fi books</li>
+            </ul>
+          </section>
+
+          <section data-testid="test-user-dislikes" class="dislikes">
+            <h3>Dislikes</h3>
+            <ul>
+              <li>Unoptimized code</li>
+              <li>Slow Wi-Fi</li>
+              <li>Vibe coders</li>
+            </ul>
+          </section>
+        </section>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
