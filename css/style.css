@@ -139,6 +139,25 @@ body {
   margin-bottom: 0.25rem;
     color: #c8f5c8;
 }
+a {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 2rem;
+  color: #00ff88;
+  border: 1px solid #00ff66;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #0c160c, #061006);
+  text-align: center;
+}
+
+a:hover {
+  background: #00ff66;
+  color: #081108;
+  box-shadow: 0 0 12px #00ff66;
+  transform: translateY(-2px);
+}
 
 /* Responsive layout */
 @media (min-width: 700px) {

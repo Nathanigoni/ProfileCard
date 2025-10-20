@@ -30,11 +30,24 @@ It features a sleek layout, subtle glow effects, and a fully responsive design t
 ```bash
 profile-card/
 │
-├── assets/               # Images, icons, or font files
-├── styles/               # CSS stylesheets
-│   └── style.css
-├── index.html            # Main entry file
-└── README.md             # Project documentation
+├── assets/                     # Images, icons, fonts, etc.
+│   └── profile.jpg              # Example: your profile picture
+│
+├── css/                         # All stylesheets
+│   ├── style.css                # Main Profile Card styles (index.html)
+│   ├── contact.css              # Styles for Contact Us page
+│   └── about.css                # Styles for About Me page
+│
+├── js/                          # JavaScript logic
+│   ├── contact.js               # Form validation for Contact Us page
+│   └── script.js                # Optional JS for main page (index.html)
+│
+├── index.html                   # Stage 0: Profile Card (Home page)
+├── contact.html                 # Stage 1: Contact Us page
+├── about.html                   # Stage 1: About Me page
+│
+└── README.md                    # Documentation and instructions
+
 ```
 🧠 How to Run Locally
 
@@ -52,6 +65,33 @@ You can simply double-click index.html, or use the Live Server extension in VS C
 
 # If using VS Code:
 Right click → "Open with Live Server"
+
+
+-----------------------------------------------------------------
+# Profile Card + Multi-Page Extension (Stage 1)
+
+Welcome to **Stage 1** of my HNG project.  
+This builds upon my previous Stage 0 profile card and introduces:
+- A **Contact Us** page with HTML5 + JavaScript form validation.
+- An **About Me** page showcasing reflection sections.
+
+## live Demo
+[https://nathanigoni.github.io/ProfileCard](https://nathanigoni.github.io/ProfileCard)
+
+## Repository
+[GitHub Repository](https://github.com/Nathanigoni/ProfileCard)
+
+## Run Locally
+
+```bash
+# Clone the repo
+git clone https://github.com/Nathanigoni/ProfileCard.git
+
+# Navigate into project folder
+cd ProfileCard
+
+# Open index.html in your browser
+
 
 💬 Author
 
