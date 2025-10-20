@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap");
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(135deg, #061306, #0c1b0c, #142814);
@@ -11,12 +16,11 @@ body {
   padding: 2rem;
 }
 
-
 .profile-card {
   background: linear-gradient(145deg, #0b160b, #132413);
   border-radius: 1rem;
   box-shadow: 0 8px 25px rgba(0, 255, 100, 0.1);
-  max-width: 600px;
+  max-width: 500px;
   width: 100%;
   padding: 2rem;
   transition: all 0.3s ease;
@@ -28,7 +32,6 @@ body {
   box-shadow: 0 12px 35px rgba(0, 255, 100, 0.2);
 }
 
-
 h2 {
   color: #00ff99;
   font-size: 1.4rem;
@@ -39,13 +42,12 @@ h2 {
   text-shadow: 0 0 8px rgba(0, 255, 100, 0.3);
 }
 
-
 form {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  width: 100%;
 }
-
 
 label {
   display: block;
@@ -55,10 +57,10 @@ label {
   font-size: 0.95rem;
 }
 
-
 input,
 textarea {
   width: 100%;
+  max-width: 100%;
   padding: 0.8rem;
   border: 1px solid rgba(0, 255, 100, 0.15);
   border-radius: 8px;
@@ -67,6 +69,7 @@ textarea {
   font-size: 0.95rem;
   outline: none;
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 input:focus,
@@ -74,7 +77,6 @@ textarea:focus {
   border-color: #00ff66;
   box-shadow: 0 0 10px rgba(0, 255, 100, 0.3);
 }
-
 
 .error {
   color: #ff4d4d;
@@ -92,7 +94,6 @@ textarea:focus {
   letter-spacing: 0.5px;
   text-shadow: 0 0 8px rgba(0, 255, 100, 0.4);
 }
-
 
 button {
   background: linear-gradient(135deg, #00cc66, #00ff99);
@@ -112,7 +113,6 @@ button:hover {
   box-shadow: 0 0 15px rgba(0, 255, 150, 0.4);
   transform: translateY(-2px);
 }
-
 
 a {
   text-decoration: none;
@@ -134,17 +134,27 @@ a:hover {
   transform: translateY(-2px);
 }
 
-
+/* Responsive Fix */
 @media (max-width: 600px) {
   body {
     padding: 1rem;
   }
 
   .profile-card {
-    padding: 1.5rem;
+    padding: 1.2rem;
+    width: 100%;
+    max-width: 100%;
   }
 
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  input, textarea {
+    font-size: 0.9rem;
   }
 }
